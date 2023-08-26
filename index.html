@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
-    <div class="content-container">
+    <div class="hero-container">
       <header class="header">
         <div class="top-header">
           <div class="top-header__credits">
@@ -142,93 +142,192 @@
           </nav>
         </div>
       </header>
-      <main class="main">
-        <section class="section-hero">
-          <h1 class="section-hero__heading">Say Yes to The World</h1>
-          <p class="section-hero__text">
-            Pulvinar rhoncus eget non vulputate varius ullamcorper enim arcu
-            mauris. Pharetra augue amet sit cursus. Leo commodo neque neque
-            praesent. Aliquet tincidunt maecenas elementum eu ipsum erat. Velit
-            quisque morbi nisl accumsan auctor at at nec.
-          </p>
-          <form class="section-hero__flight-form" action="">
-            <div class="section-hero__flight-inputs">
-              <div class="section-hero__container">
-                <label for="" class="section-hero__input-label"
-                  >Departure date</label
-                >
-                <div
-                  class="section-hero__input-container section-hero__input-container_theme_location"
-                >
-                  <input
-                    placeholder="Where are you now?"
-                    type="text"
-                    class="input section-hero__flight-input"
-                  />
-                </div>
-              </div>
-              <div class="section-hero__container">
-                <label for="" class="section-hero__input-label"
-                  >Arrival Airport</label
-                >
-                <div
-                  class="section-hero__input-container section-hero__input-container_theme_location"
-                >
-                  <input
-                    placeholder="Where are you going?"
-                    type="text"
-                    class="input section-hero__flight-input"
-                  />
-                </div>
-              </div>
-              <div class="section-hero__container">
-                <label for="" class="section-hero__input-label">Date</label>
-                <div
-                  class="section-hero__input-container section-hero__input-container_theme_calendar"
-                >
-                  <input
-                    placeholder="When are you leaving?"
-                    type="text"
-                    class="input section-hero__flight-input"
-                  />
-                </div>
-              </div>
-              <div class="section-hero__container">
-                <label for="" class="section-hero__input-label"
-                  >Travellers</label
-                >
-                <div
-                  class="section-hero__input-container section-hero__input-container_theme_person"
-                >
-                  <input
-                    list="passangers"
-                    placeholder="Number of passengers"
-                    type="number"
-                    class="input section-hero__flight-input"
-                  />
-                  <datalist id="passangers" class="section-hero__passangers">
-                    <option value="1" class="section_hero__passanger">1</option>
-                    <option value="2" class="section_hero__passanger">2</option>
-                    <option value="3" class="section_hero__passanger">3</option>
-                    <option value="4" class="section_hero__passanger">4</option>
-                    <option value="5" class="section_hero__passanger">5</option>
-                    <option value="6" class="section_hero__passanger">6</option>
-                    <option value="7" class="section_hero__passanger">7</option>
-                    <option value="8" class="section_hero__passanger">8</option>
-                    <option value="9" class="section_hero__passanger">9</option>
-                    <option value="10" class="section_hero__passanger">
-                      10
-                    </option>
-                  </datalist>
-                </div>
+
+      <section class="section-hero">
+        <h1 class="section-hero__heading">Say Yes to The World</h1>
+        <p class="section-hero__text">
+          Pulvinar rhoncus eget non vulputate varius ullamcorper enim arcu
+          mauris. Pharetra augue amet sit cursus. Leo commodo neque neque
+          praesent. Aliquet tincidunt maecenas elementum eu ipsum erat. Velit
+          quisque morbi nisl accumsan auctor at at nec.
+        </p>
+        <form class="section-hero__flight-form" action="">
+          <div class="section-hero__flight-inputs">
+            <div class="section-hero__container">
+              <label for="" class="section-hero__input-label"
+                >Departure date</label
+              >
+              <div
+                class="section-hero__input-container section-hero__input-container_theme_location"
+              >
+                <input
+                  placeholder="Where are you now?"
+                  type="text"
+                  class="input section-hero__flight-input"
+                />
               </div>
             </div>
-            <button class="button section-hero__button button_rounded">
-              Search Your Flight
-            </button>
-          </form>
-        </section>
-      </main>
+            <div class="section-hero__container">
+              <label for="" class="section-hero__input-label"
+                >Arrival Airport</label
+              >
+              <div
+                class="section-hero__input-container section-hero__input-container_theme_location"
+              >
+                <input
+                  placeholder="Where are you going?"
+                  type="text"
+                  class="input section-hero__flight-input"
+                />
+              </div>
+            </div>
+            <div class="section-hero__container">
+              <label for="" class="section-hero__input-label">Date</label>
+              <div
+                class="section-hero__input-container section-hero__input-container_theme_calendar"
+              >
+                <input
+                  placeholder="When are you leaving?"
+                  type="text"
+                  class="input section-hero__flight-input"
+                />
+              </div>
+            </div>
+            <div class="section-hero__container">
+              <label for="" class="section-hero__input-label">Travellers</label>
+              <div
+                class="section-hero__input-container section-hero__input-container_theme_person"
+              >
+                <input
+                  list="passangers"
+                  placeholder="Number of passengers"
+                  type="number"
+                  class="input section-hero__flight-input"
+                />
+                <datalist id="passangers" class="section-hero__passangers">
+                  <option value="1" class="section_hero__passanger">1</option>
+                  <option value="2" class="section_hero__passanger">2</option>
+                  <option value="3" class="section_hero__passanger">3</option>
+                  <option value="4" class="section_hero__passanger">4</option>
+                  <option value="5" class="section_hero__passanger">5</option>
+                  <option value="6" class="section_hero__passanger">6</option>
+                  <option value="7" class="section_hero__passanger">7</option>
+                  <option value="8" class="section_hero__passanger">8</option>
+                  <option value="9" class="section_hero__passanger">9</option>
+                  <option value="10" class="section_hero__passanger">10</option>
+                </datalist>
+              </div>
+            </div>
+          </div>
+          <button class="button section-hero__button button_rounded">
+            Search Your Flight
+          </button>
+        </form>
+      </section>
     </div>
+    <main class="main main-content-container">
+      <section class="section-destinations">
+        <div class="section-destinations__description-container">
+          <h2 class="section-destinations__heading">Top Destinations</h2>
+          <p class="section-destinations__text">
+            Dui in in orci fermentum a. Maecenas nunc id ut auctor curabitur
+            pellentesque id et tristique. Pellentesque et a nisl aliquam eget.
+            Nam velit duis in mauris arcu vivamus amet turpis in. In bibendum
+            placerat quam ullamcorper accumsan felis. Velit vitae pellentesque
+            sagittis et consequat sit donec. Donec aenean vivamus ullamcorper
+            urna aliquet faucibus lacus aliquet.
+          </p>
+          <button class="button section-destinations__button button_rounded">
+            Discover More
+          </button>
+        </div>
+        <div class="section-destinations__cards-container">
+          <div class="section-destinations__card-container">
+            <img
+              class="section-destinations__country-image"
+              src="/images/japan.png"
+              alt="Photo of Tokyo, Japan"
+            />
+            <div class="section-destinations__image-signature">
+              <p class="section-destinations__tour-text">
+                Tokyo,
+                <span class="section-destinations__country">Japan</span>
+              </p>
+              <p class="section-destinations__tour-text">Rs. 24,000 onwards.</p>
+            </div>
+          </div>
+          <div class="section-destinations__card-container">
+            <img
+              class="section-destinations__country-image"
+              src="/images/malaysia.png"
+              alt="Photo of Kuching, Malaysia"
+            />
+            <div class="section-destinations__image-signature">
+              <p class="section-destinations__tour-text">
+                Kuching,
+                <span class="section-destinations__country">Malaysia</span>
+              </p>
+              <p class="section-destinations__tour-text">Rs. 34,000 onwards.</p>
+            </div>
+          </div>
+          <div class="section-destinations__card-container">
+            <img
+              class="section-destinations__country-image"
+              src="/images/nepal.png"
+              alt="Photo of Kathmandu, Nepal"
+            />
+            <div class="section-destinations__image-signature">
+              <p class="section-destinations__tour-text">
+                Kathmandu,
+                <span class="section-destinations__country">Nepal</span>
+              </p>
+              <p class="section-destinations__tour-text">Rs. 25,000 onwards.</p>
+            </div>
+          </div>
+          <div class="section-destinations__card-container">
+            <img
+              class="section-destinations__country-image"
+              src="/images/nepal.png"
+              alt="Photo of Kathmandu, Nepal"
+            />
+            <div class="section-destinations__image-signature">
+              <p class="section-destinations__tour-text">
+                Kathmandu,
+                <span class="section-destinations__country">Nepal</span>
+              </p>
+              <p class="section-destinations__tour-text">Rs. 25,000 onwards.</p>
+            </div>
+          </div>
+          <div class="section-destinations__card-container">
+            <img
+              class="section-destinations__country-image"
+              src="/images/australia.png"
+              alt="Photo of Kathmandu, Nepal"
+            />
+            <div class="section-destinations__image-signature">
+              <p class="section-destinations__tour-text">
+                Sydney,
+                <span class="section-destinations__country">Australia</span>
+              </p>
+              <p class="section-destinations__tour-text">Rs. 74,000 onwards.</p>
+            </div>
+          </div>
+          <div class="section-destinations__card-container">
+            <img
+              class="section-destinations__country-image"
+              src="/images/malaysia.png"
+              alt="Photo of Kuching, Malaysia"
+            />
+            <div class="section-destinations__image-signature">
+              <p class="section-destinations__tour-text">
+                Kuching,
+                <span class="section-destinations__country">Malaysia</span>
+              </p>
+              <p class="section-destinations__tour-text">Rs. 34,000 onwards.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

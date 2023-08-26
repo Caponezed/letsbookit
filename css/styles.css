@@ -11,7 +11,8 @@
 body {
   background-color: rgb(106, 106, 106);
 }
-.content-container {
+.hero-container {
+  margin-bottom: 80px;
   padding: 0 var(--desktop-horizontal-padding);
   background: url(/images/hero.png);
   background-size: cover;
@@ -35,8 +36,6 @@ body {
 .select {
   cursor: pointer;
   appearance: unset;
-}
-.input {
 }
 /* HEADER STYLES */
 
@@ -147,9 +146,6 @@ body {
   margin-left: -24px;
   border: none;
 }
-.section-hero__flight-input::placeholder {
-  /* color: hsl(var(--hero-color) / 0.4); */
-}
 .section-hero__input-container_theme_location::before {
   content: url(/images/location.svg);
 }
@@ -169,4 +165,64 @@ body {
 }
 .section-hero__button {
   float: right;
+}
+
+/* MAIN CONTENT CONTAINER */
+.main-content-container {
+  padding: 0 var(--desktop-horizontal-padding);
+}
+
+/* SECTION DESTINATIONS STYLES */
+.section-destinations {
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+  align-items: center;
+  justify-items: center;
+  gap: 0 166px;
+  margin-bottom: 160px;
+}
+.section-destinations__description-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+.section-destinations__heading {
+  font-size: 3rem;
+}
+.section-destinations__text {
+  font-size: 1.25rem;
+}
+.section-destinations__button {
+  background-color: hsl(var(--theme-color));
+  color: hsl(var(--hero-color));
+}
+.section-destinations__card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.section-destinations__country-image {
+  border-radius: 40px;
+}
+.section-destinations__image-signature {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+}
+.section-destinations__country {
+  font-size: 1.5rem;
+  color: hsl(var(--theme-color));
+}
+.section-destinations__image-signature::after {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  content: url(/images/airplane\ decoration.svg);
+}
+.section-destinations__cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
 }
