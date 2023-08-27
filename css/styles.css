@@ -14,7 +14,12 @@ body {
 .hero-container {
   margin-bottom: 80px;
   padding: 0 var(--desktop-horizontal-padding);
-  background: url(/images/hero.png);
+  background: linear-gradient(
+      270deg,
+      hsl(0deg 0% 0% / 0) 50%,
+      hsl(0deg 0% 0% / 1) 100%
+    ),
+    url(/images/hero.png);
   background-size: cover;
   color: hsl(var(--hero-color));
 }
@@ -273,4 +278,38 @@ body {
 }
 .section-services__decoration {
   max-width: 834px;
+}
+
+/* SECTION SUBSCRIBE */
+.section-subscribe {
+  margin-bottom: 80px;
+  padding: 80px 80px;
+  background-color: hsl(var(--theme-color));
+  border-radius: 40px;
+}
+.section-subscribe__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.section-subscribe__heading {
+  font-size: 3rem;
+  text-align: center;
+}
+.section-subscribe__text {
+  width: 55ch;
+  font-size: 1.25rem;
+  text-align: center;
+  line-height: 2;
+}
+.section-subscribe__mail-container {
+  display: flex;
+  gap: 45px;
+  padding: 40px;
+  background-color: hsl(var(--hero-color));
+  border-radius: 40px;
+}
+.section-subscribe__input-container_theme_mail::before {
+  content: url(/images/mail.svg);
 }
