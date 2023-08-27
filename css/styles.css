@@ -9,7 +9,7 @@
 
 /* COMMON STYLES */
 body {
-  background-color: rgb(106, 106, 106);
+  /* background-color: rgb(180, 180, 180); */
 }
 .hero-container {
   margin-bottom: 80px;
@@ -225,4 +225,52 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
+}
+
+/* SECTION-SERVICES STYLES */
+.section-services {
+  display: grid;
+  grid-template-columns: 3fr 5fr;
+  margin-bottom: 80px;
+}
+.section-services__list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex-basis: 50%;
+}
+.section-services__list-item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.section-services__heading-block {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  font-size: 2rem;
+}
+.section-services__item-number {
+  font-weight: 600;
+}
+.section-services__item-text {
+  padding-left: 80px;
+  line-height: 2;
+}
+.section-services__promo-block {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+.section-services__promo-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 40px;
+}
+.section-services__promo-heading {
+  font-size: 3rem;
+}
+.section-services__decoration {
+  max-width: 834px;
 }
