@@ -25,7 +25,7 @@ body {
       hsl(0deg 0% 0% / 0) 50%,
       hsl(0deg 0% 0% / 1) 100%
     ),
-    url(/images/hero.png);
+    url(/images/hero-image-x1.jpg);
   background-size: cover;
   color: hsl(var(--hero-color));
 }
@@ -35,6 +35,18 @@ body {
   border: none;
   background: none;
   color: inherit;
+}
+.h2-heading {
+  font-size: 3rem;
+  font-weight: 600;
+}
+.h3-heading {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.regular-text {
+  font-size: 1.25rem;
+  line-height: 1.6;
 }
 /* INPUT STYLES */
 .input {
@@ -87,8 +99,8 @@ body {
   padding: 0 var(--desktop-horizontal-gap);
   border-bottom: 1px solid hsl(var(--hero-color));
 }
-/* HEADER STYLES */
 
+/* HEADER STYLES */
 /* TOP HEADER STYLES */
 .top-header {
   display: flex;
@@ -156,7 +168,7 @@ body {
   max-width: 50%;
 }
 .section-hero__heading {
-  font-size: 80px;
+  font-size: 5rem;
   margin-bottom: 40px;
 }
 .section-hero__text {
@@ -198,12 +210,6 @@ body {
   flex-direction: column;
   align-items: flex-start;
   gap: 40px;
-}
-.section-destinations__heading {
-  font-size: 3rem;
-}
-.section-destinations__text {
-  font-size: 1.25rem;
 }
 .section-destinations__button {
   background-color: hsl(var(--theme-color));
@@ -260,14 +266,9 @@ body {
   display: flex;
   align-items: center;
   gap: 40px;
-  font-size: 2rem;
-}
-.section-services__item-number {
-  font-weight: 600;
 }
 .section-services__item-text {
   padding-left: 80px;
-  line-height: 2;
 }
 .section-services__promo-block {
   display: flex;
@@ -279,9 +280,6 @@ body {
   flex-direction: column;
   align-items: flex-end;
   gap: 40px;
-}
-.section-services__promo-heading {
-  font-size: 3rem;
 }
 
 /* SECTION SUBSCRIBE */
@@ -297,14 +295,11 @@ body {
   gap: 40px;
 }
 .section-subscribe__heading {
-  font-size: 3rem;
   text-align: center;
 }
 .section-subscribe__text {
   width: 55ch;
-  font-size: 1.25rem;
   text-align: center;
-  line-height: 2;
 }
 .section-subscribe__mail-container {
   display: flex;
@@ -333,4 +328,30 @@ body {
   padding: 40px;
   font-size: 1.5rem;
   font-weight: 600;
+}
+
+/* MEDIA QUERIES */
+
+/* RESPONSIVE IMAGES */
+@media (min-resolution: 2dppx) {
+  .hero-container {
+    background: linear-gradient(
+        270deg,
+        hsl(0deg 0% 0% / 0) 50%,
+        hsl(0deg 0% 0% / 1) 100%
+      ),
+      url(/images/hero-image-x2.jpg);
+    background-size: cover;
+  }
+}
+@media (min-resolution: 3dppx) {
+  .hero-container {
+    background: linear-gradient(
+        270deg,
+        hsl(0deg 0% 0% / 0) 50%,
+        hsl(0deg 0% 0% / 1) 100%
+      ),
+      url(/images/hero-image-x3.jpg);
+    background-size: cover;
+  }
 }
