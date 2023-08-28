@@ -50,7 +50,12 @@ a {
   text-decoration: none;
 }
 ul {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
+}
+address {
+  font-style: normal;
 }
 /* REMOVING DECORATIVE DEFAULT ARROWS OF INPUTS WITH TYPES 'LIST' AND 'NUMBER' */
 input[type="number"]::-webkit-inner-spin-button,

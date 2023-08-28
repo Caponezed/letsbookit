@@ -2,6 +2,7 @@
 :root {
   --hero-color: 0deg 100% 96%;
   --theme-color: 47deg 100% 44%;
+  --main-color: 223deg 47% 15%;
   --desktop-horizontal-padding: 120px;
   --reduced-button-paddings: 8px 16px;
   --regular-button-paddings: 16px 40px;
@@ -9,7 +10,7 @@
 
 /* COMMON STYLES */
 body {
-  /* background-color: rgb(180, 180, 180); */
+  color: hsl(var(--main-color));
 }
 .hero-container {
   margin-bottom: 80px;
@@ -312,4 +313,26 @@ body {
 }
 .section-subscribe__input-container_theme_mail::before {
   content: url(/images/mail.svg);
+}
+
+/* FOOTER */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 0px var(--desktop-horizontal-padding);
+  margin-bottom: 80px;
+}
+.footer__nav {
+  width: 100%;
+  border-width: 1px 0px 1px 0px;
+  border-style: solid;
+}
+.footer__list {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
