@@ -1,5 +1,6 @@
 "use strict";
 
+// Start Of burger button handling code
 let burgerButton = document.querySelector(".bottom-header__burger");
 let burgerMenu = document.querySelector(".header__link-menu");
 let transparentLayer = document.querySelector(
@@ -109,3 +110,30 @@ function getScrollbarWidth() {
 
   return scrollbarWidth;
 }
+// End of burger button handling code
+
+// Start Of 60 Rem query Handling code
+let sixtyRemQuery = window.matchMedia("(max-width: 60rem)");
+let mailLink = document.querySelector(".top-header__mail");
+let telLink = document.querySelector(".top-header__tel");
+let intervalId;
+
+handleTabletChange(sixtyRemQuery);
+sixtyRemQuery.addEventListener("change", handleTabletChange);
+function handleTabletChange(event) {
+  if (event.matches) {
+    mailLink.classList.add("top-header__mail_hidden");
+
+    intervalId = setInterval(() => {
+      mailLink.classList.toggle("top-header__mail_hidden");
+      telLink.classList.toggle("top-header__tel_hidden");
+    }, 5000);
+    console.log("60 Rem Media query matches!");
+  } else {
+    telLink.classList.remove("top-header__tel_hidden");
+    mailLink.classList.remove("top-header__mail_hidden");
+    clearInterval(intervalId);
+    console.log("60 Rem Media query does not match.");
+  }
+}
+// End Of 60 Rem query Handling code
