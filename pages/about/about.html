@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Let`s book it!</title>
+    <title>Let`s book it! - About us</title>
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -22,9 +22,10 @@
       href="/favicons/favicon-16x16.png"
     />
     <link rel="manifest" href="/favicons/site.webmanifest" />
-    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
     <link rel="stylesheet" href="/fonts/stylesheet.css" />
     <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/pages/about/about.css" />
   </head>
   <body>
     <div class="site-wrapper">
@@ -122,18 +123,18 @@
           </div>
 
           <div class="bottom-header">
-            <div class="logo">
+            <a href="/index.html" class="logo">
               <img
                 class="logo__svg"
                 src="/images/logo.svg"
                 alt="Logo of the company"
               />
-            </div>
+            </a>
             <nav class="bottom-header__nav">
               <ul class="bottom-header__list">
                 <li class="bottom-header__list-item">
                   <a
-                    href="/pages/about/about.html"
+                    href="/pages/about.html"
                     class="bottom-header__link link-effects"
                     >About</a
                   >
@@ -168,7 +169,7 @@
                     class="bottom-header__list-item bottom-header__list-item_burger"
                   >
                     <a
-                      href="/pages/about/about.html"
+                      href="/pages/about.html"
                       class="bottom-header__link link-effects"
                       >About</a
                     >
@@ -244,268 +245,138 @@
             </button>
           </div>
         </header>
-
-        <section class="section-hero">
-          <h1 class="section-hero__heading">Say Yes to The World</h1>
-          <p class="regular-text section-hero__text">
-            Pulvinar rhoncus eget non vulputate varius ullamcorper enim arcu
-            mauris. Pharetra augue amet sit cursus. Leo commodo neque neque
-            praesent. Aliquet tincidunt maecenas elementum eu ipsum erat. Velit
-            quisque morbi nisl accumsan auctor at at nec.
-          </p>
-          <form class="section-hero__flight-form" action="">
-            <div class="section-hero__flight-inputs">
-              <div class="section-hero__container">
-                <label for="" class="section-hero__input-label"
-                  >Departure date</label
-                >
-                <div class="input-container input-container_theme_location">
-                  <input
-                    placeholder="Where are you now?"
-                    type="text"
-                    class="input"
-                  />
-                </div>
-              </div>
-              <div class="section-hero__container">
-                <label for="" class="section-hero__input-label"
-                  >Arrival Airport</label
-                >
-                <div class="input-container input-container_theme_location">
-                  <input
-                    placeholder="Where are you going?"
-                    type="text"
-                    class="input"
-                  />
-                </div>
-              </div>
-              <div class="section-hero__container">
-                <label for="" class="section-hero__input-label">Date</label>
-                <div class="input-container input-container_theme_calendar">
-                  <input
-                    class="input section-hero__input section-hero__input_date"
-                    placeholder="When are you leaving?"
-                    type="text"
-                  />
-                </div>
-              </div>
-              <div class="section-hero__container">
-                <label for="" class="input-label">Travellers</label>
-                <div class="input-container input-container_theme_person">
-                  <input
-                    list="passangers"
-                    placeholder="Number of passengers"
-                    type="number"
-                    class="input"
-                  />
-                  <datalist id="passangers" class="section-hero__passangers">
-                    <option value="1" class="section_hero__passanger">1</option>
-                    <option value="2" class="section_hero__passanger">2</option>
-                    <option value="3" class="section_hero__passanger">3</option>
-                    <option value="4" class="section_hero__passanger">4</option>
-                    <option value="5" class="section_hero__passanger">5</option>
-                    <option value="6" class="section_hero__passanger">6</option>
-                    <option value="7" class="section_hero__passanger">7</option>
-                    <option value="8" class="section_hero__passanger">8</option>
-                    <option value="9" class="section_hero__passanger">9</option>
-                    <option value="10" class="section_hero__passanger">
-                      10
-                    </option>
-                  </datalist>
-                </div>
-              </div>
-            </div>
-            <button class="button section-hero__button button_rounded">
-              Search Your Flight
-            </button>
-          </form>
-        </section>
       </div>
       <main class="main main-content-container">
-        <section class="section-destinations">
-          <div class="section-destinations__description-container">
-            <h2 class="h2-heading">Top Destinations</h2>
-            <p class="regular-text">
-              Dui in in orci fermentum a. Maecenas nunc id ut auctor curabitur
-              pellentesque id et tristique. Pellentesque et a nisl aliquam eget.
-              Nam velit duis in mauris arcu vivamus amet turpis in. In bibendum
-              placerat quam ullamcorper accumsan felis. Velit vitae pellentesque
-              sagittis et consequat sit donec. Donec aenean vivamus ullamcorper
-              urna aliquet faucibus lacus aliquet.
-            </p>
-            <button class="button section-destinations__button button_rounded">
-              Discover More
-            </button>
-          </div>
-          <div class="section-destinations__cards-outer-container">
-            <div class="section-destinations__cards-container">
-              <div class="section-destinations__card-container">
+        <section class="section-about-us">
+          <h2 class="h2-heading section-about-us__heading">About us</h2>
+          <p class="regular-text section-about-us__text">
+            Welcome to Let's Book It, your premier travel ticketing company
+            dedicated to making your travel experiences seamless and
+            unforgettable. At Let's Book It, we understand that every journey is
+            unique, and we are here to ensure that your travel plans are
+            hassle-free from start to finish.
+          </p>
+          <img
+            class="section-about-us__airplane-image"
+            src="/images/airplane-sunset.jpg"
+            alt="A nice airplane in the sunset"
+          />
+          <p class="regular-text section-about-us__text">
+            Whether you're planning a relaxing vacation, a business trip, or a
+            spontaneous getaway, Let's Book It offers a wide array of travel
+            tickets to destinations across the globe. From flights to
+            accommodations, car rentals to event tickets, we've got you covered.
+          </p>
+          <p class="regular-text section-about-us__text">
+            <em> Why choose Let's Book It for your travel needs?</em>
+          </p>
+          <ol class="regular-text section-about-us__list">
+            <li class="section-about-us__list-item">
+              <b class="section-about-us__bold-text">Extensive Selection:</b>
+              <div class="section-about-us__wrapper">
                 <img
-                  class="section-destinations__country-image"
-                  src="/images/japan.png"
-                  alt="Photo of Tokyo, Japan"
+                  class="section-about-us__list-item-image"
+                  src="/images/extensive-selection.png"
+                  alt="A drawing of airplanes"
                 />
-                <div class="section-destinations__image-signature">
-                  <div class="section-destinations__text-container">
-                    <p class="section-destinations__tour-text">
-                      Tokyo,
-                      <span class="section-destinations__country">Japan</span>
-                    </p>
-                    <p class="section-destinations__tour-text">
-                      Rs. 24,000 onwards.
-                    </p>
-                  </div>
-                </div>
+                <p class="regular-text section-about-us__list-item-text">
+                  We provide access to a vast selection of flights, hotels, car
+                  rentals, and experiences, allowing you to tailor your trip
+                  exactly to your preferences.
+                </p>
               </div>
-              <div class="section-destinations__card-container">
-                <img
-                  class="section-destinations__country-image"
-                  src="/images/malaysia.png"
-                  alt="Photo of Kuching, Malaysia"
-                />
-                <div class="section-destinations__image-signature">
-                  <div class="section-destinations__text-container">
-                    <p class="section-destinations__tour-text">
-                      Kuching,
-                      <span class="section-destinations__country"
-                        >Malaysia</span
-                      >
-                    </p>
-                    <p class="section-destinations__tour-text">
-                      Rs. 34,000 onwards.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="section-destinations__card-container">
-                <img
-                  class="section-destinations__country-image"
-                  src="/images/nepal.png"
-                  alt="Photo of Kathmandu, Nepal"
-                />
-                <div class="section-destinations__image-signature">
-                  <div class="section-destinations__text-container">
-                    <p class="section-destinations__tour-text">
-                      Kathmandu,
-                      <span class="section-destinations__country">Nepal</span>
-                    </p>
-                    <p class="section-destinations__tour-text">
-                      Rs. 25,000 onwards.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="section-destinations__card-container">
-                <img
-                  class="section-destinations__country-image"
-                  src="/images/nepal.png"
-                  alt="Photo of Kathmandu, Nepal"
-                />
-                <div class="section-destinations__image-signature">
-                  <div class="section-destinations__text-container">
-                    <p class="section-destinations__tour-text">
-                      Kathmandu,
-                      <span class="section-destinations__country">Nepal</span>
-                    </p>
-                    <p class="section-destinations__tour-text">
-                      Rs. 25,000 onwards.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="section-destinations__card-container">
-                <img
-                  class="section-destinations__country-image"
-                  src="/images/australia.png"
-                  alt="Photo of Kathmandu, Nepal"
-                />
-                <div class="section-destinations__image-signature">
-                  <div class="section-destinations__text-container">
-                    <p class="section-destinations__tour-text">
-                      Sydney,
-                      <span class="section-destinations__country"
-                        >Australia</span
-                      >
-                    </p>
-                    <p class="section-destinations__tour-text">
-                      Rs. 74,000 onwards.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="section-destinations__card-container">
-                <img
-                  class="section-destinations__country-image"
-                  src="/images/malaysia.png"
-                  alt="Photo of Kuching, Malaysia"
-                />
-                <div class="section-destinations__image-signature">
-                  <div class="section-destinations__text-container">
-                    <p class="section-destinations__tour-text">
-                      Kuching,
-                      <span class="section-destinations__country"
-                        >Malaysia</span
-                      >
-                    </p>
-                    <p class="section-destinations__tour-text">
-                      Rs. 34,000 onwards.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="section-services">
-          <ul class="section-services__list">
-            <li class="section-services__list-item">
-              <div class="h3-heading section-services__heading-block">
-                <span class="section-services__item-number">01</span>
-                <h3 class="section-services__item-heading">Instant Ticket</h3>
-              </div>
-              <p class="regular-text section-services__item-text">
-                Eu scelerisque amet amet malesuada id ultrices morbi. Vitae
-                purus mauris hac nisi habitasse donec. Vitae integer massa in
-                blandit.
-              </p>
             </li>
-            <li class="section-services__list-item">
-              <div class="h3-heading section-services__heading-block">
-                <span class="section-services__item-number">02</span>
-                <h3 class="section-services__item-heading">Worldwide Flight</h3>
+            <li class="section-about-us__list-item">
+              <b class="section-about-us__bold-text">User-Friendly Platform:</b>
+              <div class="section-about-us__wrapper">
+                <img
+                  class="section-about-us__list-item-image"
+                  src="/images/friendly-platform.png"
+                  alt="A drawing of airplanes"
+                />
+                <p class="regular-text section-about-us__list-item-text">
+                  Our user-friendly website and mobile app make it easy to
+                  browse, select, and book your travel tickets within minutes.
+                </p>
               </div>
-              <p class="regular-text section-services__item-text">
-                Eu scelerisque amet amet malesuada id ultrices morbi. Vitae
-                purus mauris hac nisi habitasse donec. Vitae integer massa in
-                blandit.
-              </p>
             </li>
-            <li class="section-services__list-item">
-              <div class="h3-heading section-services__heading-block">
-                <span class="section-services__item-number">03</span>
-                <h3 class="section-services__item-heading">Trusted Booking</h3>
+            <li class="section-about-us__list-item">
+              <b class="section-about-us__bold-text">Competitive Prices:</b>
+              <div class="section-about-us__wrapper">
+                <img
+                  class="section-about-us__list-item-image"
+                  src="/images/competetive-pricing.png"
+                  alt="A drawing of airplanes"
+                />
+                <p class="regular-text section-about-us__list-item-text">
+                  We believe in providing the best value for your money. Our
+                  platform offers competitive prices and special deals, ensuring
+                  you get the most out of your travel budget.
+                </p>
               </div>
-              <p class="regular-text section-services__item-text">
-                Eu scelerisque amet amet malesuada id ultrices morbi. Vitae
-                purus mauris hac nisi habitasse donec. Vitae integer massa in
-                blandit.
-              </p>
             </li>
-          </ul>
-          <div class="section-services__promo-block">
-            <div class="section-services__promo-header">
-              <h2 class="h2-heading">We Offer Best Services</h2>
-              <button
-                class="button section-services__button section-destinations__button button_rounded"
+            <li class="section-about-us__list-item">
+              <b class="section-about-us__bold-text">
+                Customer Service Excellence:</b
               >
-                Learn More
-              </button>
-            </div>
-            <img
-              class="section-services__decoration"
-              src="/images/travel case.svg"
-            />
-          </div>
+              <div class="section-about-us__wrapper">
+                <img
+                  class="section-about-us__list-item-image"
+                  src="/images/customer_service.jpg"
+                  alt="A drawing of airplanes"
+                />
+                <p class="regular-text section-about-us__list-item-text">
+                  Our dedicated customer service team is available to assist you
+                  at every step of your journey. Whether you need assistance
+                  with bookings, changes, or any travel-related queries, we're
+                  here to help.
+                </p>
+              </div>
+            </li>
+            <li class="section-about-us__list-item">
+              <b class="section-about-us__bold-text">Secure and Reliable:</b>
+              <div class="section-about-us__wrapper">
+                <img
+                  class="section-about-us__list-item-image"
+                  src="/images/secure.jpg"
+                  alt="A drawing of airplanes"
+                />
+                <p class="regular-text section-about-us__list-item-text">
+                  Your security is our priority. Let's Book It ensures secure
+                  transactions and protects your personal information, giving
+                  you peace of mind while you plan your travels.
+                </p>
+              </div>
+            </li>
+            <li class="section-about-us__list-item">
+              <b class="section-about-us__bold-text"
+                >Personalized Recommendations:</b
+              >
+              <div class="section-about-us__wrapper">
+                <img
+                  class="section-about-us__list-item-image"
+                  src="/images/recommendation.png"
+                  alt="A drawing of airplanes"
+                />
+                <p class="regular-text section-about-us__list-item-text">
+                  Your security is our priority. Let's Book It ensures secure
+                  transactions and protects your personal information, giving
+                  you peace of mind while you plan your travels.
+                </p>
+              </div>
+            </li>
+          </ol>
+          <p class="regular-text section-about-us__text">
+            From the bustling streets of New York to the serene beaches of Bali,
+            or the historic charm of Rome, Let's Book It is your one-stop-shop
+            for all travel ticketing needs. We aim to make your travel dreams a
+            reality.
+          </p>
+          <p class="regular-text section-about-us__text">
+            Join us at Let's Book It and unlock a world of seamless travel
+            experiences. Book your tickets, pack your bags, and let's make
+            unforgettable memories together!
+          </p>
         </section>
         <section class="section-subscribe">
           <form action="" class="section-subscribe__form">
@@ -536,8 +407,11 @@
         </section>
       </main>
       <footer class="footer">
-        <a href="#"
-          ><img class="logo" src="/images/logo.svg" alt="A company logotype"
+        <a href="/index.html"
+          ><img
+            class="logo__svg"
+            src="/images/logo.svg"
+            alt="A company logotype"
         /></a>
         <p class="regular-text section-subscribe__text">
           Eu scelerisque amet amet malesuada id ultrices morbi. Vitae purus
@@ -546,11 +420,7 @@
         <nav class="footer__nav">
           <ul class="footer__list">
             <li class="footer__list-item">
-              <a
-                href="/pages/about/about.html"
-                class="footer__link link-effects"
-                >About</a
-              >
+              <a href="#" class="footer__link link-effects">About</a>
             </li>
             <li class="footer__list-item">
               <a href="#" class="footer__link link-effects">Explore</a>
@@ -578,6 +448,6 @@
         </address>
       </footer>
     </div>
-    <script src="/js/script.js"></script>
   </body>
+  <script src="/pages/about/about.js"></script>
 </html>

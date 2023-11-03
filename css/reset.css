@@ -69,4 +69,15 @@ input[type="number"] {
 input[list]::-webkit-calendar-picker-indicator {
   display: none !important;
 }
+/* This will stylize the arrow in Chrome */
+input[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  /* For moving the calendar icon */
+  position: absolute;
+  left: 4px;
+  top: 12px;
+  opacity: 0;
+}
 /* ---- */

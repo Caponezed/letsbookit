@@ -161,6 +161,9 @@ a:active {
 .input-container_theme_location::before {
   content: url(/images/location.svg);
 }
+.input-container_theme_calendar::placeholder {
+  color: white;
+}
 .input-container_theme_calendar::before {
   content: url(/images/calendar.svg);
 }
@@ -236,14 +239,6 @@ a:active {
 .top-header__list-item {
   color: black;
 }
-.header__link-menu {
-  display: none;
-  right: 0;
-  top: 0px;
-  bottom: 0px;
-  width: 70%;
-  background-color: hsl(222, 53%, 7%);
-}
 
 /* BOTTOM HEADER STYLES */
 .bottom-header {
@@ -265,6 +260,24 @@ a:active {
 }
 .bottom-header_transparent-layer {
   display: none;
+  transition: opacity 0.6s ease;
+}
+.bottom-header__link-menu {
+  display: none;
+  z-index: 1;
+  right: 0;
+  top: 0px;
+  bottom: 0px;
+  width: 70%;
+
+  transition: opacity 0.5s ease;
+  background-color: hsl(222, 53%, 7%);
+}
+.bottom-header_transparent-layer,
+.bottom-header__link-menu {
+  opacity: 0;
+
+  will-change: opacity;
 }
 
 /* SECTION HERO */
@@ -349,6 +362,7 @@ a:active {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
+  scroll-behavior: smooth;
 }
 .section-destinations__mail-decoration {
   transform: translateX(-16px);
@@ -603,26 +617,33 @@ a:active {
   }
   .bottom-header__burger {
     display: revert;
+
+    transition: opacity 1s ease;
   }
-  .header__link-menu {
+  .bottom-header__link-menu {
     position: fixed;
   }
   .bottom-header_transparent-layer {
-    position: absolute;
-    content: "";
+    position: fixed;
+    z-index: 1;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
+
+    content: "";
     background: hsl(0deg 0% 0% / 0.85);
   }
-  .header__link-menu_open {
+  .bottom-header__link-menu_open {
     display: revert;
   }
   .bottom-header__burger_close {
     position: fixed;
-    top: 8%;
     right: 8%;
+    z-index: 1;
+    top: 8%;
+
+    opacity: 0;
   }
   .bottom-header__nav {
     display: none;
@@ -639,9 +660,6 @@ a:active {
     align-items: center;
     gap: 70px;
     font-size: 2.5rem;
-  }
-  .bottom-header__list-item_burger {
-    /* flex-shrink: 0; */
   }
 
   /* SECTION HERO */
@@ -888,4 +906,8 @@ a:active {
   .bottom-header__list_burger {
     font-size: 1.5rem;
   }
+}
+
+.visuallyHidden {
+  opacity: 0;
 }

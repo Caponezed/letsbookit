@@ -1,0 +1,23 @@
+{
+  "name": "letsbookit",
+  "version": "1.0.0",
+  "description": "Just a website for edcucation",
+  "main": "index.html",
+  "scripts": {
+    "test": "test",
+    "dev": "ngrok http http://127.0.0.1:5500"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Caponezed/letsbookit.git"
+  },
+  "keywords": [
+    "lending"
+  ],
+  "author": "Anton Karpov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Caponezed/letsbookit/issues"
+  },
+  "homepage": "https://github.com/Caponezed/letsbookit#readme"
+}

@@ -1,0 +1,93 @@
+.section-hero {
+  padding: 0;
+}
+.section-about-us {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 32px;
+}
+.section-about-us__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 64px;
+  margin: 0 auto;
+  padding: 32px 48px;
+  border: 3px solid hsl(var(--theme-color));
+  border-radius: 16px;
+}
+.section-about-us__airplane-image {
+  margin: 0 calc(var(--desktop-horizontal-gap) * -1);
+  max-width: revert;
+}
+.section-about-us__list-item-image {
+  max-width: 250px;
+  height: 100%;
+  border-radius: 8px;
+}
+.section-about-us__wrapper {
+  display: flex;
+  gap: 32px;
+  margin-top: 16px;
+}
+.section-about-us {
+  margin-bottom: 32px;
+}
+
+/* BREAKPOINTS */
+
+/* Desktop and Lower (1500px) */
+@media (max-width: 93.75rem) {
+  .section-about-us__list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .section-about-us__wrapper {
+    flex-direction: column;
+  }
+  .section-about-us__list-item-image {
+    max-width: 100%;
+  }
+}
+/* Laptop and Lower (1200px) */
+@media (max-width: 75rem) {
+  .section-about-us__list {
+    grid-template-columns: 1fr 1fr;
+  }
+  .section-about-us__airplane-image {
+    margin: 0 calc(var(--laptop-horizontal-gap) * -1);
+  }
+}
+/* Tablet and Lower (960px) */
+@media (max-width: 60rem) {
+  .section-about-us__airplane-image {
+    margin: 0 calc(var(--tablet-horizontal-gap) * -1);
+  }
+
+  .section-about-us__list-item-text {
+    max-width: revert;
+  }
+}
+/* Table and Lower (768px) */
+@media (max-width: 48rem) {
+  .section-about-us__list {
+    grid-template-columns: 1fr;
+  }
+}
+/*  Big Phones and Lower (552px) */
+@media (max-width: 34.5rem) {
+  .section-about-us__airplane-image {
+    margin: 0 calc(var(--tablet-horizontal-gap) * -1);
+  }
+}
+/* Thin screen phones and Lower (448px) */
+@media (max-width: 27rem) {
+  .logo__svg {
+    max-width: 80%;
+  }
+  .bottom-header {
+    padding: 12px 0px;
+  }
+  .section-about-us__airplane-image {
+    margin: 0 calc(var(--small-phones-horizontal-gap) * -1);
+  }
+}
